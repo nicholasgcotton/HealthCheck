@@ -3,7 +3,7 @@ import axios from "axios";
 import "./App.css";
 import dotenv from "dotenv";
 
-const healthCheckURL = import.meta.env.VITE_healthCheckURL;
+const healthCheckURL = "https://hc-ping.com/e265fd3a-b38a-49d1-8827-027b1942dd24";
 // Change to your personal HealthChecks.io URL in production.
 
 function App() {
