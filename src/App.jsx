@@ -1,12 +1,16 @@
 import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import "./App.css";
+import dotenv from "dotenv";
+
+const healthCheckURL = import.meta.env.VITE_healthCheckURL;
+// Change to your personal HealthChecks.io URL in production.
 
 function App() {
   const [status, setStatus] = useState("Waiting to run first test");
   const [statusArray, setStatusArray] = useState([]);
   const intervalRef = useRef();
-  const healthCheckURL = "https://hc-ping.com/e265fd3a-b38a-49d1-8827-027b1942dd24";
+
   const addStatus = (newItem) => {
     setStatusArray((prevArray) => [...prevArray, newItem]);
   };
