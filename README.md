@@ -1,8 +1,5 @@
-# React + Vite
+# Health Check
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app to use healthchecks.io to log network connectivity in the browser. Uses axios locally to attempt to hit endpoint, and healthchecks.io will log results from the cloud. Can be used to determine if network failure is local/vpn/provider.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Developed for use on a secure PC where the user has access to a browser but cannot run non-approved apps locally.
