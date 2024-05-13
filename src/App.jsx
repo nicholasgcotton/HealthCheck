@@ -28,8 +28,7 @@ function App() {
           setStatus(r.data);
           addStatus([currentTime, r.data]);
           console.log(statusArray);
-          // ! Good result gives "OK"
-          // ! Bad result gives nil, need to modify code to catch error.
+          // ! Good result gives only "OK"
         })
         .catch((error) => {
           let currentTime = new Date().toISOString();
